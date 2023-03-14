@@ -226,7 +226,7 @@ header{
     max-width: 100%;
 }
 
-section{
+main{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -375,9 +375,10 @@ footer{
         }
      .introduction{
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: left;
+        justify-content: left;
         position: absolute;
+        text-align: left;
         top: 50%;
         gap: 12.5rem;
         bottom: 50%;
@@ -386,7 +387,12 @@ footer{
             width: 100%;
         }
         .introduction-text{
-            max-width: 30vw;
+            max-width: 31rem;
+            align-items: flex-start;
+            gap: 1.5rem;
+            h1{
+                font-size: 4.0625rem;
+            }
             button{
                 width: 200px;
             }
@@ -412,7 +418,7 @@ footer{
         }
     }
 
-    section{
+    main{
         flex-direction: column;
         .boxes{
             flex-direction: row;

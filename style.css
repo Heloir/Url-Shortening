@@ -204,7 +204,7 @@ header .introduction .introduction-text button {
   max-width: 100%;
 }
 
-section {
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -213,22 +213,22 @@ section {
   gap: 5rem;
   margin-top: 100px;
 }
-section .boxes {
+main .boxes {
   display: flex;
   flex-direction: column;
   gap: 5rem;
 }
-section .box {
+main .box {
   box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.064);
   background-color: white;
 }
-section .box .box-container {
+main .box .box-container {
   margin: auto;
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
 }
-section .box img {
+main .box img {
   width: 20%;
   position: relative;
   top: -40px;
@@ -236,7 +236,7 @@ section .box img {
   padding: 10px;
   border-radius: 50%;
 }
-section div {
+main div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -349,9 +349,10 @@ footer .social {
   }
   header .introduction {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
     position: absolute;
+    text-align: left;
     top: 50%;
     gap: 12.5rem;
     bottom: 50%;
@@ -361,7 +362,12 @@ footer .social {
     width: 100%;
   }
   header .introduction .introduction-text {
-    max-width: 30vw;
+    max-width: 31rem;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  header .introduction .introduction-text h1 {
+    font-size: 4.0625rem;
   }
   header .introduction .introduction-text button {
     width: 200px;
@@ -381,17 +387,17 @@ footer .social {
   .shortener-link-container .shortener-link button {
     width: 18.75rem;
   }
-  section {
+  main {
     flex-direction: column;
   }
-  section .boxes {
+  main .boxes {
     flex-direction: row;
   }
-  section .boxes .box {
+  main .boxes .box {
     cursor: pointer;
     transition: 0.5s;
   }
-  section .boxes .box:hover {
+  main .boxes .box:hover {
     padding: 10px;
   }
   .boost-link-container {
