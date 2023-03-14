@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+// Colors
+
+// Primary
+
+$Cyan: hsl(180, 66%, 49%);
+$Dark-Violet: hsl(257, 27%, 26%);
+
+//Secondary
+
+$Red: hsl(0, 87%, 67%);
+
+//Neutral
+
+$Gray: hsl(0, 0%, 75%);
+$Grayish-Violet: hsl(257, 7%, 63%);
+$Very-Dark-Blue: hsl(255, 11%, 22%);
+$Very-Dark-Violet: hsl(260, 8%, 14%);
+
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+.container{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu.animate{
+    background-color: white;
+    animation-name: menu;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#menu-close{
+    width: 1.875rem;
+    position: absolute;
+    left: 70%;
+}
+
+header{
+    background-color: white;
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 2.5rem;
+    }
+    img{
+        cursor: pointer;
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        text-align: center;
+        left: 100%;
+        top: 0%;
+        align-items: center;
+        padding-top: 0;
+        width: 60%;
+        height: 70%;
+        background-color: white;
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        .login-container{
+            display: flex;
+            flex-direction: column;
+        }
+        li{
+            list-style: none;
+            display: flex;
+            margin-top: 10px;
+            align-items: center;
+            justify-content: center;
+        }
+        a{
+            text-decoration: none;
+            color: $Dark-Violet;
+        }
+        button{
+            background-color: $Cyan;
+            width: 130px;
+            height: 40px;
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 20px;
+            transition: 0.5s;
+
+            &:hover{
+            width: 135px;
+            height: 45px;
+            }
+        }
+    }
+    }
+
+    .introduction{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 1.875rem;
+        margin-bottom: 100px;
+        img{
+            width: 100%;
+            margin-top: 1.25rem;
+        }
+        .introduction-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            h1{
+                font-size: 30px;
+                color: $Very-Dark-Violet;
+            }
+            p{
+                color: $Gray;
+            }
+            button{
+                background-color: $Cyan;
+                color: white;
+                border: none;
+                width: 50vw;
+                height: 7vh;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+        }
+    }}
+
+    .shortener-link-container{
+        margin-top: 100px;
+        .shortener-link{
+            background-image: url(images/bg-shorten-mobile.svg);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-color: $Dark-Violet;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            height: 6.5rem;
+            border-radius: 20px;
+            input{
+                width: 60vw;
+                height: 40px;
+                border-radius: 10px;
+                border: none;
+                padding-left: 10px;
+            }
+            button{
+                width: 60vw;
+                height: 40px;
+                border-radius: 10px;
+                border: none;
+                cursor: pointer;
+                background-color: $Cyan;
+                color: white;
+            }
+        }
+
+@keyframes menu {
+    from{
+        left: 100%;
+    }
+    to{
+        left: 40%;
+    }
+}
+}
+
+.shortener-links{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: white;
+        box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.185);
+        width: 100%;
+        height: 6rem;
+        div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        }
+        button{
+            width: 6.25rem;
+            height: 2.125rem;
+            background-color: $Cyan;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+.section-style{
+    background-color: $Gray;
+    max-width: 100%;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5rem;
+    margin-top: 100px;
+    .boxes{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .box{
+        box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.064);
+        background-color: white;
+        .box-container{
+            margin: auto{
+                left: 20px;
+                right: 20px;
+                bottom: 20px;
+            }
+        }
+        img{
+            width: 20%;
+            position: relative;
+            top: -40px;
+            background-color: $Dark-Violet;
+            padding: 10px;
+            border-radius: 50%;
+        }
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+}
+
+.Advanced-Statistics{
+    h2{
+        font-size: 30px;
+    }
+}
+
+.boost-link-container{
+    width: 100%;
+    height: 6.25rem;
+    background-image: url(images/bg-shorten-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: $Dark-Violet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 10px;
+    margin-top: 100px;
+    button{
+        width: 40vw;
+        height: 2.5rem;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        background-color: $Cyan;
+        color: white;
+    }
+}
+
+
+footer{
+    background-color: $Very-Dark-Violet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+
+    .footer-container{
+       margin: 30px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+       gap: 20px;
+    }
+    h3{
+        color: white;
+    }
+    p{
+        color: $Gray;
+    }
+    .social{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+}
+
+@media (min-width: 1440px) {
+     header{
+        height: 80vh;
+        nav{
+            display: flex;
+            align-items: center;
+            max-width: 90%;
+            img{
+                width: 15%;
+                height: 50%;
+            }
+            #menu-toggle{
+                display: none;
+            }
+            #menu-close{
+                display: none;
+            }
+            .menu{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                left: 0%;
+                width: 10rem;
+                ul{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    .links-container{
+                        display: flex;
+                        gap: 0.625rem;
+                    }
+                }
+                .login-container{
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.625rem;
+                    margin-top: 10px;
+                }
+            }
+        }
+     .introduction{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        gap: 12.5rem;
+        bottom: 50%;
+        flex-direction: row-reverse;
+        img{
+            width: 100%;
+        }
+        .introduction-text{
+            max-width: 30vw;
+            button{
+                width: 200px;
+            }
+        }
+     }
+    }
+
+    .shortener-link-container{
+        .shortener-link{
+            background-image: url(images/bg-shorten-desktop.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            input{
+                width: 18.75rem;
+            }
+            button{
+                width: 18.75rem;
+            }
+        }
+    }
+
+    section{
+        flex-direction: column;
+        .boxes{
+            flex-direction: row;
+            .box{
+                cursor: pointer;
+                transition: 0.5s;
+            }
+            .box:hover{
+                padding: 10px;
+            }
+        }
+    }
+
+    .boost-link-container{
+        background-image: url(images/bg-shorten-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 8.125rem;
+    }
+
+    footer{
+        .footer-container{
+            flex-direction: row;
+            text-align: left;
+            gap: 40px;
+            img{
+                color: white;
+            }
+        }
+    }
+}
+
