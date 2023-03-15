@@ -124,9 +124,6 @@ header .introduction .introduction-text button {
   cursor: pointer;
 }
 
-.shortener-link-container {
-  margin-top: 100px;
-}
 .shortener-link-container .shortener-link {
   background-image: url(images/bg-shorten-mobile.svg);
   background-repeat: no-repeat;
@@ -210,8 +207,9 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 5rem;
+  gap: 7rem;
   margin-top: 100px;
+  height: 100vh;
 }
 main .boxes {
   display: flex;
@@ -304,7 +302,7 @@ footer .social {
 
 @media (min-width: 1440px) {
   header {
-    height: 80vh;
+    height: 100vh;
   }
   header nav {
     display: flex;
