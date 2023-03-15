@@ -124,6 +124,9 @@ header .introduction .introduction-text button {
   cursor: pointer;
 }
 
+.shortener-link-container {
+  margin-bottom: 4rem;
+}
 .shortener-link-container .shortener-link {
   background-image: url(images/bg-shorten-mobile.svg);
   background-repeat: no-repeat;
@@ -209,12 +212,13 @@ main {
   text-align: center;
   gap: 7rem;
   margin-top: 100px;
-  height: 100vh;
+  height: 100%;
 }
 main .boxes {
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  margin-bottom: 100px;
 }
 main .box {
   box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.064);
