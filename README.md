@@ -4,7 +4,7 @@
 
 
 <h1>Welcome! The challenge 👋</h1>
-<p>Link para testar o projeto : <a href="https://fylo-project-portifolio.netlify.app/">Fylo</a> - RESPONSIVO ✔️</p>
+<p>Link para testar o projeto : <a href="https://url-shortening-portifolio.netlify.app/">ENCURTADOR</a> - RESPONSIVO ✔️</p>
 
 <ul>
 <p>Nesse Projeto Usei as seguintes tecnologias :<p>
